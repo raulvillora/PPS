@@ -1,0 +1,82 @@
+SOBRE LAS TAREAS-2.[123]
+
+Las entregas se realizan desde la cuenta de uno de los miembros del grupo en la máquina triqui (triqui1.fi.upm.es).
+
+Para poder realizar una entrega se deben tener unos determinados ficheros en un determinado directorio.
+
+En el caso de la tarea 2.1 , hay que tener los ficheros:
+
+~/pps/tarea-2.1.2017-2018/autores.txt
+~/pps/tarea-2.1.2017-2018/auxiliar.c
+~/pps/tarea-2.1.2017-2018/auxiliar.h
+~/pps/tarea-2.1.2017-2018/delreves.c
+
+similarmente:
+
+~/pps/tarea-2.2.2017-2018/autores.txt
+~/pps/tarea-2.2.2017-2018/auxiliar.c
+~/pps/tarea-2.2.2017-2018/auxiliar.h
+~/pps/tarea-2.2.2017-2018/secuencia.c
+
+~/pps/tarea-2.3.2017-2018/autores.txt
+~/pps/tarea-2.3.2017-2018/auxiliar.c
+~/pps/tarea-2.3.2017-2018/auxiliar.h
+~/pps/tarea-2.3.2017-2018/bocaabajo.c
+
+donde ~/ indica el directorio $HOME del ususario.
+
+Crear estos directorios y ficheros se puede hacer directamente o bien usar el código fuente de apoyo que se proporciona.
+ADVERTENCIA: Si se tienen ya esos ficheros, al usar el código fuente de apoyo machacará la información que contenían.
+Solamente se debe bajar el código fuente de apoyo una vez por usuario, tarea y curso.
+
+Para bajarse el código fuente de apoyo, se ejecuta el siguiente mandato desde el directorio $HOME del ususario:
+
+tar xvfz ~pps/pub/tarea-2.1.2017-2018.tar.gz
+
+y similarmente para la 2.2 y 2.3
+
+que creará los directorios y ficheros.
+
+El contenido del fichero ~/pps/tarea-2.1.2017-2018/autores.txt es el siguiente:
+
+matricula:apellido1:apellido2:nombre
+matricula:apellido1:apellido2:nombre
+
+se debe editar y rellenar los datos correspondientes. Hay que hacerlo en todas las tareas.
+
+Los ficheros auxiliar.[ch] se pueden utilizar o no. Si no se utilizan hay que dejarlos como están, pero el tester va a compilar todas las práctcicas con el siguiente mandato:
+
+gcc -g -Wall -Wextra -o ejemplo ejemplo.c auxiliar.c
+
+Para realizar la entrega se debe ejecutar el mandato
+
+entrega.pps tarea-2.1
+
+Cuando el tester pase (normalmente no deben de transcurrir más de dos horas desde la entrega), enviará un mensaje a la cuenta de triqui del miembro del grupo que ha entregado.
+
+En ese mensaje se dará una nota, además de cierta información sobre los resultados de las pruebas a las que ha sido sometido el script.
+
+Este mensaje puede leerse en dicha cuenta mediante el gestor de correo mutt.
+
+Si se quiere recibir los mensajes de una manera más cómoda y en las cuentas de correo habitualmente usadas, se debe crear y rellenar el siguiente fichero:
+
+~/.forward
+
+Se puede crear y editar con cualquier editor de texto y se debe rellenar, una por línea, con las direcciones de correo que se deseen.
+
+ATENCIÓN: Esto afecta a todos los mensajes de la cuenta de triqui (no solamente los de esta asignatura) y seguirá así mientras no se modifique o borre dicho archivo.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Con el código fuente de apoyo, se incluye un fichero llamado pruebas.sh Cuando se ha avanzado en el desarrollo de cada tarea, se puede ejecutar ./pruebas.sh en cada tarea.
+
+Pasa unas pequeñas pruebas.
+
+Los ficheros auxiliar.[ch] proporcionan una forma cómoda para los mensajes de error (principalmente). Se puede ver su uso en el programa ejemplo.c . Hay que fijarse especialmente
+en el uso de la función Error(  ) y en la variable argv0 También se puede ver cómo sacar la ayuda que deben proporcionar los programas.
+
+Se recuerda que no es obligatorio usarlos, pero deben estar presentes en el directorio adecuado (el correspondiente a cada tarea).
+
