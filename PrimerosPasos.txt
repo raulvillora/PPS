@@ -1,0 +1,65 @@
+PRIMEROS PASOS EN UN LINUX Y EN LA MÁQUINA TRIQUI .
+
+Estando en una máquina unix de la escuela, el login (ususario) es el número de matrícula, incluida la letra y la password es la misma que en otros servicios del Centro de Cálculo.
+
+Siempre que se conecta uno a una máquina unix de la escuela, se debe seguir lo anterior dicho.
+
+* Entrar en modo gráfico en un Linux.
+
+* Entrar en modo texto en un Linux.
+
+     Cuando se escribe la password no se ve nada.
+
+     Ejecutar algunos mandatos como (sin comillas): "who" "who am i" "id" "ls" "ls -a" "pwd"
+
+  Y salir "exit". Se deben cancelar las conexiones.
+
+* Abrir una Xterminal. (Dos si hay dos alumnos en el puesto) (en los verdes, usar el primer icono de la izquierda empezando por arriba)
+
+     Ejecutar algunos mandatos como (sin comillas): "who" "who am i" "id" "ls" "ls -a" "pwd"
+
+* Entrar en triqui desde una consola (terminal), que es modo texto. (Uno desde cada consola)
+
+     ssh usuario@triqui1.fi.upm.es
+
+* Saber cuántos no tienen en triqui el prompt adecuado.
+
+     Si ha aparecido vuestro usuario@triqui1 bien, si aparece [bash] mal
+
+     Esta información es para uso interno, tener un prompt distinto no afecta nada al comportamiento, no tiene importancia.
+
+
+* Comprobar los permisos de la cuenta de triqui (deben obligatoriamente que estar bien).
+
+     ls -ld $HOME
+
+la respueta debe empezar por drwx------ en caso contario, advertirlo al profesor. Esto sí es importante.
+
+     Ejecutar algunos mandatos como (sin comillas): "who" "who am i" "id" "ls" "ls -a" "pwd"
+
+* Gestionar arhcivos locales (en los verdes el segundo icono de la izquierda empezando por arriba)
+
+    Ofrece un menú de comportamiento similar a otros conocidos.
+
+* Gestionar desde un entorno gráfico archivos remotos (en otra máquina o cuenta):
+
+    + Caso general, independientemente de la versión del gestor y del propìo gestor que se tenga, habrá que rellenar obligatoriamente protocolo de conexión (ssh)h, ost, usuario,  
+password,  en el orden que se pida.
+
+     La ayuda de nuestro gestor vendrá en algo parecido a "Examinar archivos en un servidor o compartición de red"
+
+     En los verdes, en el menú del gestor de archivos hay una opción que es "Conectarse con sun servidor" que es la última. Pulsar y luego habría que escribir por ejemplo "ssh@triqui3.fi.upm.es" y lo que pide.
+
+    + Caso particular. En los ordenadores de los Verdes en el propio menu tenemos ya establecido el acceso a nuestra cuenta de triqui. Además, se tiene en la CarpetaPersonal un icono de carpeta que es su cuenta ($HOME) en triqui . Desde ahí se pueden crear, arrastrar archivos y otras cosas. No ofrece las mismas posibilidades que el caso general, por ejemplo no se pueden modificar archivos de forma remota.
+
+Por lo tanto, se recomienda usar el caso general.
+
+Ejercicio: crear un archivo de texto en local, rellenarlo (con algunos mandatos) y llevarlo a triqui.
+
+Mirar los permisos y modificarlos.
+
+*****************************************************************************
+
+Para usuarios con algo de experiencia, averiguar qué hace "umask 077" e incluirlo en la última línea del archivo .bashrc de su cuenta de triqui
+	:q
+:
