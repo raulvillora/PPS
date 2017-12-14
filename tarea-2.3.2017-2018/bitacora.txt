@@ -1,0 +1,58 @@
+TITULO :  bocabajo.c : Programacion C --> tarea-2.2
+
+AUTORES : Guillermo Basterra Miret  s100017
+          Paula Caso Hoyos          t110113
+
+NUMERO DE ENTREGAS Y FECHAS:
+-Entrega 1: 18 diciembre Nota=12. Script inicio, prácticamente vacío. Solo contiene la
+ ayuda  y comprobaciones basicas.
+-Entrega 2: 21 diciembre. Nota=14. Mejora de comprobaciones.Pasa cuando recibe un fichero.
+-Entrega 3: 22 diciembre. Nota=27. No pasa con un fichero vacio,con tres argumentos de entrada y no pasa la prueba de fichero vacio.
+-Entrega 4: 22 diciembre. Programa casi terminado, solo quedan los ultimos retoques.
+-Entrega 5: 23 diciembre. Entrega completa, finalizado.
+
+
+INDICE:
+1.Desarrollo
+	1.1-Descripcion general de los trabajos realizados.
+        1.2-Definicion de terminos o conceptos nuevos.
+        1.3-Problemas encontrados.
+        1.4-Conocimientos adquiridos.
+        1.5-Bibliografia.
+        1.6-Tiempo dedicado a la tarea.
+
+
+DESARROLLO
+
+1.1 Hemos empezado realizando la ayuda del programa.
+ A continuacion nos hemos centrado en pasar las distintas comprobaciones que nos van pidiendo. 
+Hemos resuelto el problema si teniamos un fichero, mientras que el de entrada estandar nos ha costado un poco mas resolverlo.
+ Finalmente nos hemos centrado en pasar las pruebas cuando llamaban a bocabajo varias veces.
+De esta forma el programa ha quedado finalizado.
+
+
+1.2 Conceptos relevantes --> Esta es la primera practica en la que se introduce el concepto de memoria dinamica 
+y la liberacion de dicha memoria, que han sido los conceptos mas relevantes usados. 
+
+1.3 Hemos encontrado problemas al inicio cuando intentabamos asignar la memoria dinamica,
+ aunque teniamos claro el uso de malloc y realloc, el problema venia en la asignacion de los punteros y el array de punteros, 
+que es en lo que mas hemos tardado.
+
+1.4 Hemos adquirido mayor destreza en este nuevo lenguaje, y aprendido las ventajas de la memoria dinamica.
+
+1.5 La bibliografia usada han sido las transparencia explicadas en clase y la teoria proporcionada por los profesores.
+
+1.6 Aunque las entregas han sido desde el dia 18 al 23 de diciembre, en realidad hemos estado trabajando sobre esta practica en torno a dos semanas.
+
+
+
+COMENTARIOS PERSONALES
+
+Hubiese sido mas facil la realizacion de la practica de haber ido al aula de ordenadores con anterioridad.
+ Nos ha resultado de mucha utilidad los ejemplos subidos al aula virtual por el profesorado.
+
+No hemos usado en ningun momento el fichero de pruebas pruebas.sh. Hemos realizado pruebas internas creando archivos y ejecutando.
+
+
+
+

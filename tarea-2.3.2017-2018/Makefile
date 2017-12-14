@@ -10,8 +10,8 @@ CC	= gcc
 CFLAGS	= -Wall -g
 LDFLAGS	= -lm
 
-BINS	= ejemplo bocabajo 
-#BINS	= ejemplo factores
+# BINS	= ejemplo bocabajo primos
+BINS	= ejemplo bocabajo
 # XTRA	= run
 
 all:	autores.txt $(XTRA) auxiliar.o $(BINS)
@@ -57,7 +57,6 @@ autores.txt ::
 tener el formato correcto."; \
 
 # Dependencias...
-#analiza:	auxiliar.o analiza.c
+bocabajo:	auxiliar.o bocabajo.c
 ejemplo:	auxiliar.o ejemplo.c
-#factores:	auxiliar.o factores.c
-bocabajo: auxiliar.o bocabajo.c
+primos:		auxiliar.o primos.c
