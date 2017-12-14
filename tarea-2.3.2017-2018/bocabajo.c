@@ -106,6 +106,7 @@ int main(int argc, char **argv)
 						}
 					}
 					contador++;
+					free(pprimer);
 				}
 			}
 			/*free(pprimer[contador]);Liberamos el puntero de la ultima linea leida al ser un salto de linea no deseado*/
