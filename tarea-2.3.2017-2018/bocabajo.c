@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 			pprimer = (char **)realloc(pprimer, ((contador + 1) * sizeof(char *)));
 			if ((psegun = (char *)strdup(cadena)) == NULL)
 			{
-				argv0 = "bocabajo";
+				argv0 = "bocabajo";	
 				Error(EX_OSERR, "%s", "No se  pudo ubicar la memoria dinamica necesaria.");
 			}
 			else
@@ -106,7 +106,6 @@ int main(int argc, char **argv)
 						}
 					}
 					contador++;
-					free(pprimer);
 				}
 			}
 			/*free(pprimer[contador]);Liberamos el puntero de la ultima linea leida al ser un salto de linea no deseado*/

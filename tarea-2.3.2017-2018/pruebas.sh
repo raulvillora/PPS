@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # ATENCION: ESTE es al fichero a modificar para añadir nuevas pruebas.
 # ATENCION: ESTE es al fichero a modificar para añadir nuevas pruebas.
@@ -13,10 +13,11 @@
 
 # Indique en esta variable los números de matrícula
 # de los componentes del grupo.
-MEMBERS='v13m047 v13m051'
+MEMBERS='a0XXXXX b0YYYYY c0ZZZZZ'
 
 # Indique en esta variable los nombres de los programas
 # para los que han implementado casos de prueba.
+PROGRAMAS="ejemplo"
 PROGRAMAS="ejemplo delreves secuencia bocabajo primos factores analiza"
 
 
