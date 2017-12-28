@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 v13m047:Puado:Garcia:Pablo
 v13m051:Villora:Valencia:Raul
+=======
+13m047:Puado:García:Pablo
+13m051:Villora:Valencia:Raúl
+>>>>>>> 86f90c66f5920c7ad04cc87ce2c731d81d59162c
 

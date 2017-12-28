@@ -1,0 +1,2 @@
+bocabajo: .*Uso: .*bocabajo.c...El programa recibe un fichero o cadena de texto,
+bocabajo: El programa devuelve cada  linea del fichero leida  de derecha a izquierda(al reves).

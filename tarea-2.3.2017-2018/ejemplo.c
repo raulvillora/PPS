@@ -11,10 +11,10 @@
 
 void Ayuda(void)
 {
-	fprintf(stdout, "%s: Uso: %s [ a  [ b ]]\n", argv0, argv0);
-	fprintf(stdout, "%s: Sin argumentos muestra un digito aleatorio de 0 a 9.\n", argv0);
-	fprintf(stdout, "%s: Con un argumento muestra factorial(a).\n", argv0);
-	fprintf(stdout, "%s: Con dos argumentos muestra binomial(a,b).\n", argv0);
+	fprintf(stderr, "%s: Uso: %s [ a  [ b ]]\n", argv0, argv0);
+	fprintf(stderr, "%s: Sin argumentos muestra un digito aleatorio de 0 a 9.\n", argv0);
+	fprintf(stderr, "%s: Con un argumento muestra factorial(a).\n", argv0);
+	fprintf(stderr, "%s: Con dos argumentos muestra binomial(a,b).\n", argv0);
 	exit(0);
 }
 

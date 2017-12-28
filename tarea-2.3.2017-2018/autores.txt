@@ -1,3 +1,3 @@
-matricula:apellido1:apellido2:nombre
-matricula:apellido1:apellido2:nombre
+v13m047:Puado:García:Pablo
+v13m051:Villora:Valencia:Pablo
 

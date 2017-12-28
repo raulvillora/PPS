@@ -1,0 +1,2 @@
+delreves: .*Uso: .*delreves.c...El programa recibe un fichero o cadena de texto,
+delreves: El programa devuelve cada  linea del fichero leida  de derecha a izquierda(al reves).
