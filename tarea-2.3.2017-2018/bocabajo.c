@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 			pprimer = (char **)realloc(pprimer, ((contador + 1) * sizeof(char *)));
 			if ((psegun = (char *)strdup(cadena)) == NULL)
 			{
-				argv0 = "bocabajo";	
+				argv0 = "bocabajo";
 				Error(EX_OSERR, "%s", "No se  pudo ubicar la memoria dinamica necesaria.");
 			}
 			else
@@ -95,7 +95,7 @@ int main(int argc, char **argv)
 					else
 					{
 						pprimer = (char **)realloc(pprimer, ((contador + 1) * sizeof(char *))); /*Aumentamos el tamaño del array de punteros para que entre el puntero de la linea siguiente*/
-						if ((psegun = (char *)strdup(cadena)) == NULL)				/*/*Duplicamos la linea leida en memoria dinamica y comprobamos que el puntero a dicha linea no sea nulo*/
+						if ((psegun = (char *)strdup(cadena)) == NULL)							/*/*Duplicamos la linea leida en memoria dinamica y comprobamos que el puntero a dicha linea no sea nulo*/
 						{
 							argv0 = "bocabajo";
 							Error(EX_OSERR, "%s", "No se  pudo ubicar la memoria dinamica necesaria.");
@@ -116,7 +116,7 @@ int main(int argc, char **argv)
 			for (j = contador - 1; j >= 0; j--) /*Bucle para recorrer el array de  punteros*/
 			{
 				printf("%s", pprimer[j]); /*Impresion lineas caracter a caracter*/
-				free(pprimer[j]);	 /*Liberar array de  punteros*/
+				free(pprimer[j]);		  /*Liberar array de  punteros*/
 			}
 			free(pprimer); /*Liberar array de  punteros*/
 		}
