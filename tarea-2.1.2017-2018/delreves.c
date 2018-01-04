@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
  //Inicializamos el fichero AEntrada de salida estándar
  FILE *AEntrada;
 
- /*
+ /**
   * La función strcmp(s1, s2) devuelve los siguientes valores dependiendo de los argumentos que se le pasen:
   * 0 si s1 y s2 son iguales
   * menor que 0 si s1 < s2
